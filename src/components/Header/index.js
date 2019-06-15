@@ -1,5 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const Header = () => <header id="main-header">Planets</header>;
+import "./styles.css";
+
+const Header = () => <header id="main-header">PLANET NAME</header>;
 
 export default Header;
