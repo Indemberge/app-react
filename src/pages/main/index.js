@@ -53,15 +53,22 @@ export default class Main extends Component {
             <div className="planet-list">
                 {planets.map(planet => (
                     <article key={planet._id}>
+                    <div className="planet-name">
                         <strong>{planet.name}</strong>
-                        <p>CLIMATE: {planet.climate}</p>
-                        <p>TERRAIN: {planet.terrain}</p>
-                        <p>FEATURES IN {planet.films} FILMS</p>
+                    </div>
+                    <div className="planet-description">
+                        <p>Population: {planet.population}</p>
+                        <p>Climate: {planet.climate}</p>
+                        <p>Terrain: {planet.terrain}</p>
+                        <div className="planet-features">
+                            <p>Features in {planet.films} films</p>
+                        </div>
+                    </div>
                     </article>
                 ))}
                 <div className="actions">
-                    <button dissabled={page === 1} onClick={this.prevPage}>Previous</button>
-                    <button dissabled={page === planetInfo.pages} onClick={this.nextPage}>Next</button>
+                    <button disabled={page === 1} onClick={this.prevPage}>Previous</button>
+                    <button disabled={page === planetInfo.pages} onClick={this.nextPage}>Next</button>
                 </div>
             </div>
         );

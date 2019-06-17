@@ -6,23 +6,40 @@
     
 .planet-list article {
     background: #fff;
-    border: 1px solid #000;
-    border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
+    font-size: 32PX;
+    line-height: 48px;
 }
 
 .planet-list article p {
-    font-size: 16px;
+    font-size: 32px;
     color: #000;
     margin-top: 5px;
-    line-height: 24px;
+    line-height: 48px;
+    margin-left: 30px;
+}
+
+.planet-list .planet-name {
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.planet-list .planet-description {
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.planet-list .planet-features {
+    text-align: center;
 }
 
 .planet-list .actions {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    margin: 20px;
 }
     
 .planet-list .actions button {
